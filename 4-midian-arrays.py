@@ -7,6 +7,7 @@
 # if odd, middle number
 
 # This is the naive O(m + n), _NOT_ O(log (m+n))
+# Binary Search is needed for O(log(m+n))
 class Solution:
     def findMedianSortedArrays(self, nums1, nums2):
         merged = sorted(nums1 + nums2)
