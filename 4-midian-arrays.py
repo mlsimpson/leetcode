@@ -1,11 +1,12 @@
 # Given two sorted arrays: num1 & num2
 # return the median of the two sorted arrays
-# Constraints: O(n) == O(log (m+n))
+# Constraints: O() == O(log (m+n))
 # Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5
 #
 # understandings: if even, median is (middle 2 numbers / 2)
 # if odd, middle number
 
+# This is the naive O(m + n), _NOT_ O(log (m+n))
 class Solution:
     def findMedianSortedArrays(self, nums1, nums2):
         merged = sorted(nums1 + nums2)
