@@ -1,4 +1,3 @@
-# Definition for singly-linked list.
 def traverse(node, tens, tempsum):
     tempsum = tempsum + (node.val * tens)
     tens *= 10
@@ -20,7 +19,8 @@ def list2nodes(mylist):
         mylist.pop(0)
 
     return head
-
+    
+# Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
