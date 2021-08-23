@@ -25,3 +25,4 @@ solution.isPalindrome("a") # -> True
 solution.isPalindrome("ab") # -> False
 solution.isPalindrome("abc") # -> False
 solution.isPalindrome("abcdcba") # -> True
+
