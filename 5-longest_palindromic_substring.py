@@ -1,8 +1,10 @@
 class Solution:
+
     def longestPalindrome(self, s: str) -> str:
         pass
 
     def isPalindrome(self, s: str) -> bool:
+
         start = 0
         end = len(s) - 1
 
