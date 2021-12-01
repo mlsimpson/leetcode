@@ -19,10 +19,18 @@ class Solution:
         print("True")
         return True
 
+    def isPalindrome2(self, s: str) -> bool:
+
+        if s == s[::-1]:
+            print("True")
+            return True
+
+        print("False")
+        return False
 
 solution = Solution()
 #print(solution.longestPalindrome("mystring"))
-solution.isPalindrome("abcba") # -> True
+solution.isPalindrome2("abcba") # -> True
 solution.isPalindrome("a") # -> True
 solution.isPalindrome("ab") # -> False
 solution.isPalindrome("abc") # -> False
