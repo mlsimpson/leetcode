@@ -37,3 +37,16 @@ print(solution.twoSum([2, 3, 4], 6))
 print(solution.twoSum([3, 3], 6))
 print(solution.twoSum([1, 2, 3, 4], 6))
 
+
+# revisited 4/19/22
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        nums_hash = {}
+
+        for i, n, in enumerate(nums):
+            diff = target - n
+            if diff in nums_hash:
+                return [nums_hash[diff], i]
+            nums_hash[n] = i
+
