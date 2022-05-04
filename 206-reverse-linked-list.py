@@ -57,5 +57,8 @@ def reverseList(head):
     #     will override None as the call stack pops
     head.next = None
 
+    # we want to return the head, which is the last node in the list
+    # the last node as head propagates via the recursive call
+    # throughout the call stack
     return rev_list
 
