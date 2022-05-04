@@ -39,3 +39,23 @@ class Solution:
         # fix the head pointer
         return tmp
 
+# another recursive solution
+def reverseList(head):
+    # Base case, returns null on empty list
+    # returns the 'last' node on a non-empty list
+    if not head or not head.next:
+        return head
+
+    rev_list = reverseList(head.next)
+    # tricky to think about:
+    # head.next's "next" pointer is the current head
+    # which reverses the pointer
+    head.next.next = head
+    # We set head.next to None for two reasons:
+    # 1 - The final list needs to end in "None"
+    # 2 - each "previous" recursive call (lower on the call stack)
+    #     will override None as the call stack pops
+    head.next = None
+
+    return rev_list
+
