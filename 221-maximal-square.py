@@ -5,7 +5,7 @@ class Solution:
 
         max_edge = 0
 
-        for i  in range(len(matrix)):
+        for i in range(len(matrix)):
             matrix[i] = [int(x) for x in matrix[i]]
 
         for r in range(len(matrix)):
